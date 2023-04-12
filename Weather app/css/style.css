@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #45B29D; 
+}
+
+/* Font-header */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@300&display=swap');
+
+.container {
+    border: 1px solid #f7f306;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    width: 289px;
+}
+
+.header {
+    border: 1px solid #2ff806;
+    background-color: rgb(50, 50, 50);
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.header-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+  
+.menu-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #FFF;
+    margin-right: 10px;
+}
+  
+.menu-items {
+    display: none;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 1;
+}
+  
+.menu-items li {
+    margin: 10px 0;
+}
+
+.menu-items a {
+    color: #333;
+    text-decoration: none;
+}
+  
+input[type="checkbox"] {
+    display: none;
+}
+  
+input[type="checkbox"]:checked ~ .menu-items {
+    display: flex;
+}
+
+.header h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 10px;
+    font-size: xx-small;
+}
+
+.header-button {
+    height: 27px;
+    width: 27px;
+    background-color: rgb(26, 26, 26);
+    border: 1px solid rgb(26, 26, 26);
+    border-radius: 3px;
+}
+
+.navigation-icon {
+    color: #FFF;
+}
+
+.main {
+    border: 1px solid red;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+.main h6 {
+    font-family: "Arial Bold", Arial, sans-serif;
+  }
+
+.weather {
+    align-self: center;
+}
+
+.weather p {
+    font-size: xx-large;
+}
+
+.footer {
+    border: 1px solid blue;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {
+    align-self: center;
+}
